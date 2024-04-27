@@ -39,6 +39,8 @@ next-env.d.ts
 client/generated
 schema.graphql
 graphql-env.d.ts
+contentful.graphql
+contentful-env.d.ts
 
 # secrets
 .catalyst

@@ -39,10 +39,19 @@
       },
       {
         "name": "@0no-co/graphqlsp",
-        "schema": "./schema.graphql",
-        "tadaOutputLocation": "./graphql-env.d.ts",
-        "trackFieldUsage": false,
-        "shouldCheckForColocatedFragments": false
+        "shouldCheckForColocatedFragments": false,
+        "schemas": [
+          {
+            "name": "bigcommerce",
+            "schema": "./schema.graphql",
+            "tadaOutputLocation": "./graphql-env.d.ts"
+          },
+          {
+            "name": "contentful",
+            "schema": "./contentful.graphql",
+            "tadaOutputLocation": "./contentful-env.d.ts"
+          }
+        ]
       }
     ],
     "baseUrl": "."

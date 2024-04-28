@@ -15,6 +15,14 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['@icons-pack/react-simple-icons'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.ctfassets.net',
+      },
+    ],
+  },
   transpilePackages: ['@bigcommerce/components'],
   typescript: {
     ignoreBuildErrors: !!process.env.CI,

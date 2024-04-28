@@ -3,7 +3,6 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 
 import { getFeaturedProducts } from '~/client/queries/get-featured-products';
 import { getNewestProducts } from '~/client/queries/get-newest-products';
-import { Hero } from '~/components/hero';
 import { ProductCardCarousel } from '~/components/product-card-carousel';
 import { LocaleType } from '~/i18n';
 import { Banner } from '~/integrations/contentful/components/banner';
@@ -26,8 +25,6 @@ export default async function Home({ params: { locale } }: Props) {
 
   return (
     <>
-      <Hero />
-
       <Banner />
 
       <div className="my-10">

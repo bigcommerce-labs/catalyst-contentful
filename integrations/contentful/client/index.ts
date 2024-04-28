@@ -2,6 +2,7 @@ import { createContentfulClient } from './client';
 
 export { ContentfulAPIError } from './error';
 export { removeEdgesAndNodes } from './utils/remove-edges-and-nodes';
+export { contentfulGraphql } from './graphql';
 
 export const contentfulClient = createContentfulClient({
   conttenfulSpaceId: process.env.CONTENTFUL_SPACE_ID ?? '',
